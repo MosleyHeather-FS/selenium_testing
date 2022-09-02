@@ -11721,16 +11721,21 @@ html {
 }
 
 .sidebar-nav {
-  position: absolute;
   top: 0;
-  width: 250px;
+  width: 100%;
   margin: 0;
   padding: 0;
   list-style: none;
+  background: linear-gradient(
+      90deg,
+      rgba(255, 255, 255, 0.1) 0%,
+      rgba(255, 255, 255, 0.1) 100%
+    ),
+    url('../assets/img/bg-masthead.jpg');
 }
 
 .sidebar-nav li.sidebar-nav-item a {
-  display: block;
+  display: inline;
   text-decoration: none;
   color: #fff;
   padding: 15px;
@@ -11748,8 +11753,8 @@ html {
 }
 
 .sidebar-nav > .sidebar-brand {
+  display: inline;
   font-size: 1.2rem;
-  background: rgba(52, 58, 64, 0.1);
   height: 80px;
   line-height: 50px;
   padding-top: 15px;
@@ -11907,7 +11912,7 @@ label {
 }
 @media (min-width: 992px) {
   .masthead {
-    height: 100vh;
+    height: 90vh;
   }
   .masthead h1,
   .masthead .h1 {
